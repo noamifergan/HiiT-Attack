@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3942E802CE54129981ED13CA /* Pods_HiitAttack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2D932F431635C8A84B9A92 /* Pods_HiitAttack.framework */; };
+		CA1228E9246ED19B00B4668C /* Extantions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1228E8246ED19B00B4668C /* Extantions.swift */; };
+		CA6CFF7E247005B3001FAEE9 /* PickersBrains.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CFF7D247005B3001FAEE9 /* PickersBrains.swift */; };
+		CA6CFF82247114CC001FAEE9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CFF81247114CC001FAEE9 /* SettingsViewController.swift */; };
+		CA6CFF86247128AD001FAEE9 /* ConstantsForApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CFF85247128AD001FAEE9 /* ConstantsForApp.swift */; };
+		CA730A10247ABD1A001212AF /* Boxing bell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA730A0F247ABD1A001212AF /* Boxing bell.mp3 */; };
+		CA9D2823246ECA3B00EA00D5 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9D2822246ECA3B00EA00D5 /* SetupViewController.swift */; };
+		CAA488432472A54C00153F95 /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA488422472A54C00153F95 /* WorkoutViewController.swift */; };
+		CAA4884B24758FA800153F95 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA4884A24758FA800153F95 /* FinalViewController.swift */; };
+		CAB420FC246C015C008FDE1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB420FB246C015C008FDE1C /* AppDelegate.swift */; };
+		CAB420FE246C015C008FDE1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB420FD246C015C008FDE1C /* SceneDelegate.swift */; };
+		CAB42100246C015C008FDE1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB420FF246C015C008FDE1C /* ViewController.swift */; };
+		CAB42105246C0161008FDE1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB42104246C0161008FDE1C /* Assets.xcassets */; };
+		CAB42108246C0161008FDE1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB42106246C0161008FDE1C /* LaunchScreen.storyboard */; };
+		CAB42110246D7905008FDE1C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4210F246D7905008FDE1C /* RegisterViewController.swift */; };
+		CAB42118246E7933008FDE1C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAB42117246E7933008FDE1C /* Default-568h@2x.png */; };
+		CAB4211C246E7BEB008FDE1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAB4211B246E7BEB008FDE1C /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA9C033A2479571D007CE80F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1E2D932F431635C8A84B9A92 /* Pods_HiitAttack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiitAttack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56F946C5BCA63D576A966D0D /* Pods-HiitAttack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiitAttack.debug.xcconfig"; path = "Target Support Files/Pods-HiitAttack/Pods-HiitAttack.debug.xcconfig"; sourceTree = "<group>"; };
+		CA1228E8246ED19B00B4668C /* Extantions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extantions.swift; sourceTree = "<group>"; };
+		CA6CFF7D247005B3001FAEE9 /* PickersBrains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickersBrains.swift; sourceTree = "<group>"; };
+		CA6CFF81247114CC001FAEE9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		CA6CFF85247128AD001FAEE9 /* ConstantsForApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsForApp.swift; sourceTree = "<group>"; };
+		CA730A0F247ABD1A001212AF /* Boxing bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Boxing bell.mp3"; sourceTree = "<group>"; };
+		CA9D2822246ECA3B00EA00D5 /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		CAA488422472A54C00153F95 /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
+		CAA4884A24758FA800153F95 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		CAB420F8246C015C008FDE1C /* HiiT Attack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HiiT Attack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB420FB246C015C008FDE1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAB420FD246C015C008FDE1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CAB420FF246C015C008FDE1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAB42104246C0161008FDE1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAB42107246C0161008FDE1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAB4210F246D7905008FDE1C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CAB42117246E7933008FDE1C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CAB42119246E7A79008FDE1C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Info.plist"; sourceTree = "<group>"; };
+		CAB4211B246E7BEB008FDE1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D151019A597B088898F438FD /* Pods-HiitAttack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiitAttack.release.xcconfig"; path = "Target Support Files/Pods-HiitAttack/Pods-HiitAttack.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAB420F5246C015C008FDE1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3942E802CE54129981ED13CA /* Pods_HiitAttack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A30BA8CD0551306F0C103541 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CAB42119246E7A79008FDE1C /* Info.plist */,
+				1E2D932F431635C8A84B9A92 /* Pods_HiitAttack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAA4884124727D4200153F95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CA6CFF7D247005B3001FAEE9 /* PickersBrains.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CAB420EF246C015C008FDE1C = {
+			isa = PBXGroup;
+			children = (
+				CAB4211B246E7BEB008FDE1C /* GoogleService-Info.plist */,
+				CAB42117246E7933008FDE1C /* Default-568h@2x.png */,
+				CA730A0F247ABD1A001212AF /* Boxing bell.mp3 */,
+				CAB420FA246C015C008FDE1C /* HiitAttack */,
+				CAB420F9246C015C008FDE1C /* Products */,
+				F1D0BB814D3CC45E3EF75B26 /* Pods */,
+				A30BA8CD0551306F0C103541 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CAB420F9246C015C008FDE1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAB420F8246C015C008FDE1C /* HiiT Attack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAB420FA246C015C008FDE1C /* HiitAttack */ = {
+			isa = PBXGroup;
+			children = (
+				CAB420FB246C015C008FDE1C /* AppDelegate.swift */,
+				CAB420FD246C015C008FDE1C /* SceneDelegate.swift */,
+				CAB42116246DB503008FDE1C /* Model */,
+				CAB42113246DB2C6008FDE1C /* Views */,
+				CAA4884124727D4200153F95 /* Controller */,
+				CAB42104246C0161008FDE1C /* Assets.xcassets */,
+				CAB42106246C0161008FDE1C /* LaunchScreen.storyboard */,
+			);
+			path = HiitAttack;
+			sourceTree = "<group>";
+		};
+		CAB42113246DB2C6008FDE1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA1228E8246ED19B00B4668C /* Extantions.swift */,
+				CAB420FF246C015C008FDE1C /* ViewController.swift */,
+				CAB4210F246D7905008FDE1C /* RegisterViewController.swift */,
+				CA9D2822246ECA3B00EA00D5 /* SetupViewController.swift */,
+				CA6CFF81247114CC001FAEE9 /* SettingsViewController.swift */,
+				CAA488422472A54C00153F95 /* WorkoutViewController.swift */,
+				CAA4884A24758FA800153F95 /* FinalViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CAB42116246DB503008FDE1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA6CFF85247128AD001FAEE9 /* ConstantsForApp.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1D0BB814D3CC45E3EF75B26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56F946C5BCA63D576A966D0D /* Pods-HiitAttack.debug.xcconfig */,
+				D151019A597B088898F438FD /* Pods-HiitAttack.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAB420F7246C015C008FDE1C /* HiitAttack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAB4210C246C0161008FDE1C /* Build configuration list for PBXNativeTarget "HiitAttack" */;
+			buildPhases = (
+				A8648DD748688529E1A3631C /* [CP] Check Pods Manifest.lock */,
+				CAB420F4246C015C008FDE1C /* Sources */,
+				CAB420F5246C015C008FDE1C /* Frameworks */,
+				CAB420F6246C015C008FDE1C /* Resources */,
+				CA9C033A2479571D007CE80F /* Embed Watch Content */,
+				01A4D7A589C0AC9138EC8015 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HiitAttack;
+			productName = pactice;
+			productReference = CAB420F8246C015C008FDE1C /* HiiT Attack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAB420F0246C015C008FDE1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Noam Efergan";
+				TargetAttributes = {
+					CAB420F7246C015C008FDE1C = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CAB420F3246C015C008FDE1C /* Build configuration list for PBXProject "HiitAttack" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAB420EF246C015C008FDE1C;
+			productRefGroup = CAB420F9246C015C008FDE1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAB420F7246C015C008FDE1C /* HiitAttack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAB420F6246C015C008FDE1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB42108246C0161008FDE1C /* LaunchScreen.storyboard in Resources */,
+				CAB4211C246E7BEB008FDE1C /* GoogleService-Info.plist in Resources */,
+				CAB42105246C0161008FDE1C /* Assets.xcassets in Resources */,
+				CAB42118246E7933008FDE1C /* Default-568h@2x.png in Resources */,
+				CA730A10247ABD1A001212AF /* Boxing bell.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01A4D7A589C0AC9138EC8015 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiitAttack/Pods-HiitAttack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiitAttack/Pods-HiitAttack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HiitAttack/Pods-HiitAttack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8648DD748688529E1A3631C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HiitAttack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAB420F4246C015C008FDE1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB42110246D7905008FDE1C /* RegisterViewController.swift in Sources */,
+				CAB42100246C015C008FDE1C /* ViewController.swift in Sources */,
+				CAA488432472A54C00153F95 /* WorkoutViewController.swift in Sources */,
+				CA1228E9246ED19B00B4668C /* Extantions.swift in Sources */,
+				CAB420FC246C015C008FDE1C /* AppDelegate.swift in Sources */,
+				CA6CFF86247128AD001FAEE9 /* ConstantsForApp.swift in Sources */,
+				CAA4884B24758FA800153F95 /* FinalViewController.swift in Sources */,
+				CAB420FE246C015C008FDE1C /* SceneDelegate.swift in Sources */,
+				CA9D2823246ECA3B00EA00D5 /* SetupViewController.swift in Sources */,
+				CA6CFF7E247005B3001FAEE9 /* PickersBrains.swift in Sources */,
+				CA6CFF82247114CC001FAEE9 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CAB42106246C0161008FDE1C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAB42107246C0161008FDE1C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAB4210A246C0161008FDE1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAB4210B246C0161008FDE1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAB4210D246C0161008FDE1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56F946C5BCA63D576A966D0D /* Pods-HiitAttack.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4J7W4CYA5S;
+				INFOPLIST_FILE = "$(SRCROOT)/../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NoamEfergan.HiitAttack;
+				PRODUCT_NAME = "HiiT Attack";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CAB4210E246C0161008FDE1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D151019A597B088898F438FD /* Pods-HiitAttack.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4J7W4CYA5S;
+				INFOPLIST_FILE = "$(SRCROOT)/../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = NoamEfergan.HiitAttack;
+				PRODUCT_NAME = "HiiT Attack";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAB420F3246C015C008FDE1C /* Build configuration list for PBXProject "HiitAttack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB4210A246C0161008FDE1C /* Debug */,
+				CAB4210B246C0161008FDE1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAB4210C246C0161008FDE1C /* Build configuration list for PBXNativeTarget "HiitAttack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB4210D246C0161008FDE1C /* Debug */,
+				CAB4210E246C0161008FDE1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAB420F0246C015C008FDE1C /* Project object */;
+}
