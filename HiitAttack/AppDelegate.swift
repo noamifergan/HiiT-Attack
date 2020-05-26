@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             didFinishLaunchingWithOptions: launchOptions
         )
         FirebaseApp.configure()
+        
 
         return true
     }

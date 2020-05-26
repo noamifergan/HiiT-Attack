@@ -36,6 +36,6 @@ struct WorkoutTimes {
 
 class presistedData:Object{
     @objc dynamic var logOutWord:String = "Logout"
-    @objc dynamic var nameOfUser:String = ""
+    @objc dynamic var nameOfUser:String = "User"
 
 }

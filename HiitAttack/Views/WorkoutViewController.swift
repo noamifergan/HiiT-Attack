@@ -168,13 +168,15 @@ class WorkoutViewController: UIViewController {
     func runWorkoutTimer(){
         if reps > 0{
         playBellSound()
-        let animation = CABasicAnimation(keyPath: "strokeEnd")
-        animation.toValue = 1
-        animation.duration = Double(WorkoutTimes.defenativeWorkTime) + 1
-        animation.fillMode = .forwards
-        animation.isRemovedOnCompletion = false
-        workOutTimerCircle.add(animation, forKey: "circle animation - work")
         workoutTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(workoutTimerRunning), userInfo: nil, repeats: true)
+            
+            let animation = CABasicAnimation(keyPath: "strokeEnd")
+            animation.fromValue = 0
+            animation.toValue = 0.795
+            animation.duration = Double(WorkoutTimes.defenativeWorkTime)
+            animation.fillMode = .forwards
+            animation.isRemovedOnCompletion = false
+            workOutTimerCircle.add(animation, forKey: "circle animation - work")
         }
         else{
 
@@ -207,8 +209,8 @@ class WorkoutViewController: UIViewController {
         playBellSound()
         restTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(restWorkoutRunning), userInfo: nil, repeats: true)
         let animation = CABasicAnimation(keyPath: "strokeEnd")
-        animation.toValue = 1
-        animation.duration = Double(WorkoutTimes.defenativeRestTime) + 1
+        animation.toValue = 0.795
+        animation.duration = Double(WorkoutTimes.defenativeRestTime)
         animation.fillMode = .forwards
         animation.isRemovedOnCompletion = false
         restTimeCircle.add(animation, forKey: "circle animation - rest")

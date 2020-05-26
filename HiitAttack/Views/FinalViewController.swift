@@ -14,7 +14,8 @@ class FinalViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super .viewDidLayoutSubviews()
         workoutTimeBackground.applyYellowGradiant()
-        shareButton.applyOrangeradiant()
+        shareButton.applyBlueGradiant()
+        returnButton.applyOrangeradiant()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,6 +29,7 @@ class FinalViewController: UIViewController {
     let workoutTimeLable = UILabel()
     let workoutTimeBackground = UIView()
     let shareButton = UIButton()
+    let returnButton = UIButton()
     let name = ConstantsForApp.results.first!.nameOfUser.components(separatedBy: ",")
     
     
@@ -40,6 +42,8 @@ class FinalViewController: UIViewController {
         addWorkOutTimeBackground()
         addWorkTimeLable()
         addShareButton()
+        addReturnButton()
+        
         
         
 
@@ -84,7 +88,7 @@ class FinalViewController: UIViewController {
         workoutTimeLable.font = .systemFont(ofSize: 20, weight: .light)
         workoutTimeLable.textAlignment = .center
         workoutTimeLable.numberOfLines = 0
-        workoutTimeLable.text = "You've worked out for \(WorkoutTimes.workoutMinutes * WorkoutTimes.reps) minutes and \(WorkoutTimes.workoutSeconds * WorkoutTimes.reps) seconds!"
+        workoutTimeLable.text = "You've done \(WorkoutTimes.reps) reps of "
         workoutTimeBackground.addSubview(workoutTimeLable)
         let margins = workoutTimeBackground.layoutMarginsGuide
         NSLayoutConstraint.activate([
@@ -104,12 +108,27 @@ class FinalViewController: UIViewController {
         view.addSubview(shareButton)
         let margins = view.layoutMarginsGuide
         NSLayoutConstraint.activate([
-            shareButton.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: -40),
-            shareButton.widthAnchor.constraint(equalTo: margins.widthAnchor, multiplier: 0.8),
-            shareButton.heightAnchor.constraint(equalToConstant: 70),
-            shareButton.centerXAnchor.constraint(equalTo: margins.centerXAnchor)
+            shareButton.centerXAnchor.constraint(equalTo: margins.centerXAnchor),
+            shareButton.widthAnchor.constraint(equalTo: margins.widthAnchor, multiplier: 0.85),
+            shareButton.centerYAnchor.constraint(equalTo: margins.centerYAnchor, constant: 260),
+            shareButton.heightAnchor.constraint(equalTo: margins.heightAnchor, multiplier: 0.1)
         ])
-        
+    }
+    
+    func addReturnButton(){
+        returnButton.makeRoundedSquere()
+        returnButton.setTitle("Start another workout!", for: .normal)
+        returnButton.titleLabel?.font = .systemFont(ofSize: 26, weight: .light)
+        returnButton.titleLabel?.textAlignment = .center
+        returnButton.addTarget(self, action: #selector(anotherWorkoutWasPressed), for: .touchUpInside)
+        view.addSubview(returnButton)
+        let margins = view.layoutMarginsGuide
+        NSLayoutConstraint.activate([
+            returnButton.centerXAnchor.constraint(equalTo: margins.centerXAnchor),
+            returnButton.widthAnchor.constraint(equalTo: margins.widthAnchor, multiplier: 0.85),
+            returnButton.centerYAnchor.constraint(equalTo: margins.centerYAnchor, constant: 150),
+            returnButton.heightAnchor.constraint(equalTo: margins.heightAnchor, multiplier: 0.1)
+        ])
     }
     
     //MARK:- buttons actions
@@ -120,6 +139,10 @@ class FinalViewController: UIViewController {
         
         present(activityVC, animated: true, completion: nil)
         
+    }
+    
+    @objc func anotherWorkoutWasPressed(){
+        navigationController?.pushViewController(ConstantsForApp.setupvc, animated: true)
     }
     
 

@@ -20,7 +20,6 @@
 		CAB420FE246C015C008FDE1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB420FD246C015C008FDE1C /* SceneDelegate.swift */; };
 		CAB42100246C015C008FDE1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB420FF246C015C008FDE1C /* ViewController.swift */; };
 		CAB42105246C0161008FDE1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB42104246C0161008FDE1C /* Assets.xcassets */; };
-		CAB42108246C0161008FDE1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB42106246C0161008FDE1C /* LaunchScreen.storyboard */; };
 		CAB42110246D7905008FDE1C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB4210F246D7905008FDE1C /* RegisterViewController.swift */; };
 		CAB42118246E7933008FDE1C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CAB42117246E7933008FDE1C /* Default-568h@2x.png */; };
 		CAB4211C246E7BEB008FDE1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAB4211B246E7BEB008FDE1C /* GoogleService-Info.plist */; };
@@ -43,6 +42,7 @@
 		1E2D932F431635C8A84B9A92 /* Pods_HiitAttack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiitAttack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F946C5BCA63D576A966D0D /* Pods-HiitAttack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiitAttack.debug.xcconfig"; path = "Target Support Files/Pods-HiitAttack/Pods-HiitAttack.debug.xcconfig"; sourceTree = "<group>"; };
 		CA1228E8246ED19B00B4668C /* Extantions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extantions.swift; sourceTree = "<group>"; };
+		CA3FAF60247D06D300946C53 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA6CFF7D247005B3001FAEE9 /* PickersBrains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickersBrains.swift; sourceTree = "<group>"; };
 		CA6CFF81247114CC001FAEE9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CA6CFF85247128AD001FAEE9 /* ConstantsForApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsForApp.swift; sourceTree = "<group>"; };
@@ -58,7 +58,6 @@
 		CAB42107246C0161008FDE1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAB4210F246D7905008FDE1C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CAB42117246E7933008FDE1C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CAB42119246E7A79008FDE1C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Info.plist"; sourceTree = "<group>"; };
 		CAB4211B246E7BEB008FDE1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D151019A597B088898F438FD /* Pods-HiitAttack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiitAttack.release.xcconfig"; path = "Target Support Files/Pods-HiitAttack/Pods-HiitAttack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +77,6 @@
 		A30BA8CD0551306F0C103541 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CAB42119246E7A79008FDE1C /* Info.plist */,
 				1E2D932F431635C8A84B9A92 /* Pods_HiitAttack.framework */,
 			);
 			name = Frameworks;
@@ -95,6 +93,7 @@
 		CAB420EF246C015C008FDE1C = {
 			isa = PBXGroup;
 			children = (
+				CA3FAF60247D06D300946C53 /* Info.plist */,
 				CAB4211B246E7BEB008FDE1C /* GoogleService-Info.plist */,
 				CAB42117246E7933008FDE1C /* Default-568h@2x.png */,
 				CA730A0F247ABD1A001212AF /* Boxing bell.mp3 */,
@@ -219,7 +218,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAB42108246C0161008FDE1C /* LaunchScreen.storyboard in Resources */,
 				CAB4211C246E7BEB008FDE1C /* GoogleService-Info.plist in Resources */,
 				CAB42105246C0161008FDE1C /* Assets.xcassets in Resources */,
 				CAB42118246E7933008FDE1C /* Default-568h@2x.png in Resources */,
@@ -424,13 +422,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 4J7W4CYA5S;
-				INFOPLIST_FILE = "$(SRCROOT)/../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Info.plist";
+				INFOPLIST_FILE = "/Users/noam/Desktop/SwiftUI Projects/HiiT Attack/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NoamEfergan.HiitAttack;
 				PRODUCT_NAME = "HiiT Attack";
 				SWIFT_VERSION = 5.0;
@@ -444,13 +444,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 4J7W4CYA5S;
-				INFOPLIST_FILE = "$(SRCROOT)/../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Info.plist";
+				INFOPLIST_FILE = "/Users/noam/Desktop/SwiftUI Projects/HiiT Attack/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NoamEfergan.HiitAttack;
 				PRODUCT_NAME = "HiiT Attack";
 				SWIFT_VERSION = 5.0;

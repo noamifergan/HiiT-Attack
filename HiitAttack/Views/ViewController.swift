@@ -27,6 +27,7 @@ class ViewController: UIViewController, LoginButtonDelegate{
         else{
             if let token = AccessToken.current,
                 !token.isExpired {
+                print("token is good")
                 self.navigationController?.pushViewController(ConstantsForApp.setupvc, animated: false)
             }
         }
