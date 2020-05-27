@@ -88,7 +88,7 @@ class FinalViewController: UIViewController {
         workoutTimeLable.font = .systemFont(ofSize: 20, weight: .light)
         workoutTimeLable.textAlignment = .center
         workoutTimeLable.numberOfLines = 0
-        workoutTimeLable.text = "You've done \(WorkoutTimes.reps) reps of "
+        workoutTimeLable.text = "You've done \(WorkoutTimes.reps) reps of \(WorkoutTimes.workoutMinutes) minutes and \(WorkoutTimes.workoutSeconds) seconds !"
         workoutTimeBackground.addSubview(workoutTimeLable)
         let margins = workoutTimeBackground.layoutMarginsGuide
         NSLayoutConstraint.activate([
