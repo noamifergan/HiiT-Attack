@@ -29,7 +29,7 @@ Registration, authentication and verification of users is managed through Fireba
 - Adobe XD
 
 ![Imgur](https://imgur.com/sIgaiO6.jpg)
-![Imgur](https://imgur.com/lfJh7JB.jpg)
+
 
 
 
