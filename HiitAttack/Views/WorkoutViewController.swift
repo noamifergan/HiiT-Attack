@@ -130,7 +130,7 @@ class WorkoutViewController: UIViewController {
     func addFinishButton(){
         finishButton.setTitle("Finish workout", for: .normal)
         finishButton.titleLabel?.textAlignment = .center
-        finishButton.titleLabel?.font = .systemFont(ofSize: 26, weight: .light)
+        finishButton.titleLabel?.font = .systemFont(ofSize: 30, weight: .light)
         finishButton.makeRoundedSquere()
         finishButton.addTarget(self, action: #selector(finishWasPressed), for: .touchUpInside)
         view.addSubview(finishButton)
@@ -154,8 +154,9 @@ class WorkoutViewController: UIViewController {
         let alert = UIAlertController(title: "End workout", message: "Are you sure you want to end the workout before its done?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "No", style: .default, handler: nil))
         alert.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: { (alert) in
-            self.workoutTimer.invalidate()
-            self.restTimer.invalidate()
+            if self.workoutTimer.isValid {
+                self.workoutTimer.invalidate()
+            }
             self.reps = 0
             self.navigationController?.pushViewController(ConstantsForApp.finalvc, animated: true)
         }))

@@ -30,7 +30,6 @@ class FinalViewController: UIViewController {
     let workoutTimeBackground = UIView()
     let shareButton = UIButton()
     let returnButton = UIButton()
-    let name = ConstantsForApp.results.first!.nameOfUser.components(separatedBy: ",")
     
     
     //MARK:- view did load
@@ -55,11 +54,11 @@ class FinalViewController: UIViewController {
     
     func addTopLable(){
         topLable.translatesAutoresizingMaskIntoConstraints = false
-        topLable.font = .systemFont(ofSize: 39, weight: .light)
+        topLable.font = .systemFont(ofSize: 26, weight: .light)
         topLable.numberOfLines = 0
         topLable.textAlignment = .center
         topLable.textColor = .white
-        topLable.text = "Great job, " + "\(name[1])"
+        topLable.text = "Great job, " + "\(ConstantsForApp.userName)"
         view.addSubview(topLable)
         let margins = view.layoutMarginsGuide
         NSLayoutConstraint.activate([

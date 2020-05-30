@@ -9,8 +9,6 @@
 import UIKit
 import Firebase
 
- 
-
 class RegisterViewController: UIViewController, UITextFieldDelegate {
         
         override func viewWillAppear(_ animated: Bool) {
@@ -26,7 +24,6 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         }
         
         // MARK: - variables
-         let myPresistedData = presistedData()
         let backView = UIView()
         let emailTextField = UITextField()
         let passwordTextField = UITextField()
@@ -39,10 +36,13 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         
         
         
+        
         // MARK: - view did load
         override func viewDidLoad() {
             super.viewDidLoad()
             view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            
+            
             addBackView()
             addRegisterLable()
             addEmailTextfield()
@@ -172,24 +172,21 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             if email != "" {
                 if password.count >= 6 {
                     if name != "" {
-                        myPresistedData.nameOfUser = "Hello," + name + "!"
-                        try! realm.write{
-                            if !ConstantsForApp.results.isEmpty{
-                                ConstantsForApp.results.first?.nameOfUser = "Hello," + name + "!"
-                                
-                            }
-                            else {
-                                realm.add(myPresistedData)
-                            }
-                        }
+
                             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                             if error != nil {
-                                let alert = UIAlertController(title: "error", message: "Invalid email or password", preferredStyle: UIAlertController.Style.alert)
+                                let alert = UIAlertController(title: "error", message: "Invalid email or password, or email is already used", preferredStyle: UIAlertController.Style.alert)
                                 alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
                                 self.present(alert, animated: true, completion: nil)
-                            }
+                            }else{
+                                guard let uid = authResult?.user.uid else {return}
+                                let userUID = ConstantsForApp.ref.child(uid)
+                                userUID.updateChildValues(["name":name, "email":email])
+                                self.navigationController?.pushViewController(ConstantsForApp.setupvc, animated: true)
+                                }
+                            
                         }
-                        self.navigationController?.pushViewController(ConstantsForApp.setupvc, animated: true)
+
                     }
                     else {
                         let alert = UIAlertController(title: "Please enter a name", message: "It can be your name, a nickname,or anything you want us to call you!", preferredStyle: UIAlertController.Style.alert)

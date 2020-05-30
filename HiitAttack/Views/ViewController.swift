@@ -19,19 +19,6 @@ class ViewController: UIViewController, LoginButtonDelegate{
         self.navigationController?.popToRootViewController(animated: true)
     }
     
-    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
-        if error != nil {
-            print(error!.localizedDescription)
-            return
-        }
-        else{
-            if let token = AccessToken.current,
-                !token.isExpired {
-                print("token is good")
-                self.navigationController?.pushViewController(ConstantsForApp.setupvc, animated: false)
-            }
-        }
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -65,9 +52,7 @@ class ViewController: UIViewController, LoginButtonDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-       
-//        print(realm.configuration.fileURL)
-        
+
         FBButton.delegate = self
         addLoginBlock()
         addLoginLable()
@@ -77,11 +62,6 @@ class ViewController: UIViewController, LoginButtonDelegate{
         addSocailMediaButtons()
         addRegisterButton()
         addFaceBookLoginButton()
-        
-        if let token = AccessToken.current,
-            !token.isExpired {
-            self.navigationController?.pushViewController(ConstantsForApp.setupvc, animated: false)
-        }
         if Auth.auth().currentUser != nil {
             self.navigationController?.pushViewController(ConstantsForApp.setupvc, animated: false)
         }
@@ -241,7 +221,7 @@ class ViewController: UIViewController, LoginButtonDelegate{
                         self!.present(alert, animated: true, completion: nil)
                     }
                     else {
-                        self!.navigationController?.pushViewController(ConstantsForApp.setupvc, animated: true)
+                        self!.navigationController?.show(ConstantsForApp.setupvc, sender: self)
                     }
                 }
                 
@@ -259,7 +239,30 @@ class ViewController: UIViewController, LoginButtonDelegate{
     }
     
 }
+    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        if error != nil {
+            print(error!.localizedDescription)
+            return
+        }
+        else{
+            let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
+            Auth.auth().signIn(with: credential) { (result, error) in
+                if error != nil{
+                    print(error!.localizedDescription)
+                }
+                else{
+                    guard let user = result?.user else {return}
+                    guard let uid = result?.user.uid else {return}
+                    let userUID = ConstantsForApp.ref.child(uid)
+                    userUID.updateChildValues(["name":user.displayName ?? "Name not available","email":user.email ?? "Email not available"])
+                    self.navigationController?.pushViewController(ConstantsForApp.setupvc, animated: true)
+                    
+                }
+            }
+            }
+        }
+    }
 
 
 
-}
+

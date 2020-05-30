@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import RealmSwift
+import Firebase
+
 
 struct ConstantsForApp {
     static let vc = ViewController()
@@ -16,8 +17,9 @@ struct ConstantsForApp {
     static let settingsvc = SettingsViewController()
     static let workoutVC = WorkoutViewController()
     static let finalvc = FinalViewController()
-    static let results = realm.objects(presistedData.self)
-    
+    static var userName = ""
+    static var ref:DatabaseReference! = Database.database().reference()
+        
 }
 
 struct WorkoutTimes {
@@ -31,11 +33,5 @@ struct WorkoutTimes {
     
     static var defenativeWorkTime = (WorkoutTimes.workoutMinutes * 60) + WorkoutTimes.workoutSeconds
     static var defenativeRestTime = (WorkoutTimes.restMinuts * 60) + WorkoutTimes.restSecond
-
-}
-
-class presistedData:Object{
-    @objc dynamic var logOutWord:String = "Logout"
-    @objc dynamic var nameOfUser:String = "User"
 
 }

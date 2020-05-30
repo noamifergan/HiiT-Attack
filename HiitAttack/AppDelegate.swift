@@ -9,9 +9,7 @@
 import UIKit
 import FBSDKCoreKit
 import Firebase
-import RealmSwift
 
-let realm = try! Realm()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -28,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             didFinishLaunchingWithOptions: launchOptions
         )
         FirebaseApp.configure()
+        
         
 
         return true

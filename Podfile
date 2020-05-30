@@ -9,9 +9,10 @@ target 'HiitAttack' do
 
 	pod 'Firebase/Auth'
 	
+	pod 'Firebase/Database'
+	
 	pod 'FBSDKLoginKit'
 
- 	pod 'RealmSwift'
 
     
     

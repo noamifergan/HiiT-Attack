@@ -21,7 +21,7 @@ class SettingsViewController: UIViewController {
     
     // MARK: - variables
     
-    var entries = [ConstantsForApp.results.first!.nameOfUser, ConstantsForApp.results.first!.logOutWord]
+    var entries = [ConstantsForApp.userName,"Logout","Terms and conditions", "Privacy policy"]
     let tableView = UITableView()
     let FaceBLoginManager = LoginManager()
 
@@ -31,6 +31,7 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         placeTableView()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellID")
         tableView.delegate = self
@@ -79,19 +80,24 @@ extension SettingsViewController:UITableViewDataSource, UITableViewDelegate{
             alert.addAction(cancelAction)
             self.present(alert, animated: true, completion: nil)
         }
+        if entries[indexPath.row] == "Privacy policy"{
+            UIApplication.shared.open(URL(string: "https://hiit-attack.flycricket.io/privacy.html")!)
+        }
+        if entries[indexPath.row] == "Terms and conditions"{
+            UIApplication.shared.open(URL(string: "https://clock-work.flycricket.io/terms.html")!)
+        }
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func logOutOfEverything(){
         FaceBLoginManager.logOut()
+        let firebaseAuth = Auth.auth()
         do {
-         try Auth.auth().signOut()
-        }catch{
-            print("Was already logged out with email")
+            try firebaseAuth.signOut()
+            navigationController?.popToRootViewController(animated: true)
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
         }
-        self.navigationController?.popToRootViewController(animated: true)
-        
-        
     }
     
     

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3942E802CE54129981ED13CA /* Pods_HiitAttack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E2D932F431635C8A84B9A92 /* Pods_HiitAttack.framework */; };
+		02852B169AEA700D868C58F3 /* Pods_HiitAttack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E66C8CEE11D71D1B5E66FF /* Pods_HiitAttack.framework */; };
 		CA1228E9246ED19B00B4668C /* Extantions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1228E8246ED19B00B4668C /* Extantions.swift */; };
 		CA6CFF7E247005B3001FAEE9 /* PickersBrains.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CFF7D247005B3001FAEE9 /* PickersBrains.swift */; };
 		CA6CFF82247114CC001FAEE9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CFF81247114CC001FAEE9 /* SettingsViewController.swift */; };
@@ -39,8 +39,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1E2D932F431635C8A84B9A92 /* Pods_HiitAttack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiitAttack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		56F946C5BCA63D576A966D0D /* Pods-HiitAttack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiitAttack.debug.xcconfig"; path = "Target Support Files/Pods-HiitAttack/Pods-HiitAttack.debug.xcconfig"; sourceTree = "<group>"; };
+		85837BF032E112A2303CF515 /* Pods-HiitAttack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiitAttack.release.xcconfig"; path = "Target Support Files/Pods-HiitAttack/Pods-HiitAttack.release.xcconfig"; sourceTree = "<group>"; };
+		A0E66C8CEE11D71D1B5E66FF /* Pods_HiitAttack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HiitAttack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFBF81C9809DBBBAD3C515E0 /* Pods-HiitAttack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiitAttack.debug.xcconfig"; path = "Target Support Files/Pods-HiitAttack/Pods-HiitAttack.debug.xcconfig"; sourceTree = "<group>"; };
 		CA1228E8246ED19B00B4668C /* Extantions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extantions.swift; sourceTree = "<group>"; };
 		CA3FAF60247D06D300946C53 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA6CFF7D247005B3001FAEE9 /* PickersBrains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickersBrains.swift; sourceTree = "<group>"; };
@@ -59,7 +60,6 @@
 		CAB4210F246D7905008FDE1C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CAB42117246E7933008FDE1C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CAB4211B246E7BEB008FDE1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D151019A597B088898F438FD /* Pods-HiitAttack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiitAttack.release.xcconfig"; path = "Target Support Files/Pods-HiitAttack/Pods-HiitAttack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,17 +67,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3942E802CE54129981ED13CA /* Pods_HiitAttack.framework in Frameworks */,
+				02852B169AEA700D868C58F3 /* Pods_HiitAttack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A30BA8CD0551306F0C103541 /* Frameworks */ = {
+		2A71C4D861495554CDAB6C04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E2D932F431635C8A84B9A92 /* Pods_HiitAttack.framework */,
+				A0E66C8CEE11D71D1B5E66FF /* Pods_HiitAttack.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -100,7 +100,7 @@
 				CAB420FA246C015C008FDE1C /* HiitAttack */,
 				CAB420F9246C015C008FDE1C /* Products */,
 				F1D0BB814D3CC45E3EF75B26 /* Pods */,
-				A30BA8CD0551306F0C103541 /* Frameworks */,
+				2A71C4D861495554CDAB6C04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,8 +151,8 @@
 		F1D0BB814D3CC45E3EF75B26 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				56F946C5BCA63D576A966D0D /* Pods-HiitAttack.debug.xcconfig */,
-				D151019A597B088898F438FD /* Pods-HiitAttack.release.xcconfig */,
+				AFBF81C9809DBBBAD3C515E0 /* Pods-HiitAttack.debug.xcconfig */,
+				85837BF032E112A2303CF515 /* Pods-HiitAttack.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -164,12 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CAB4210C246C0161008FDE1C /* Build configuration list for PBXNativeTarget "HiitAttack" */;
 			buildPhases = (
-				A8648DD748688529E1A3631C /* [CP] Check Pods Manifest.lock */,
+				1CD3ABF2039C8FEA59671938 /* [CP] Check Pods Manifest.lock */,
 				CAB420F4246C015C008FDE1C /* Sources */,
 				CAB420F5246C015C008FDE1C /* Frameworks */,
 				CAB420F6246C015C008FDE1C /* Resources */,
 				CA9C033A2479571D007CE80F /* Embed Watch Content */,
-				01A4D7A589C0AC9138EC8015 /* [CP] Embed Pods Frameworks */,
+				CA55E103F434CA6BF1E4E25D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,24 +228,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01A4D7A589C0AC9138EC8015 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HiitAttack/Pods-HiitAttack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HiitAttack/Pods-HiitAttack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HiitAttack/Pods-HiitAttack-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A8648DD748688529E1A3631C /* [CP] Check Pods Manifest.lock */ = {
+		1CD3ABF2039C8FEA59671938 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,6 +248,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA55E103F434CA6BF1E4E25D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiitAttack/Pods-HiitAttack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HiitAttack/Pods-HiitAttack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HiitAttack/Pods-HiitAttack-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -418,7 +418,7 @@
 		};
 		CAB4210D246C0161008FDE1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56F946C5BCA63D576A966D0D /* Pods-HiitAttack.debug.xcconfig */;
+			baseConfigurationReference = AFBF81C9809DBBBAD3C515E0 /* Pods-HiitAttack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -440,7 +440,7 @@
 		};
 		CAB4210E246C0161008FDE1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D151019A597B088898F438FD /* Pods-HiitAttack.release.xcconfig */;
+			baseConfigurationReference = 85837BF032E112A2303CF515 /* Pods-HiitAttack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

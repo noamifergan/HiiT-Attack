@@ -8,12 +8,14 @@
 
 import UIKit
 import FBSDKLoginKit
+import Firebase
 
 class SetupViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
+        updateName()
     }
 
         
@@ -38,7 +40,9 @@ class SetupViewController: UIViewController {
     let lapsPicker = UIPickerView()
     let restPicker = UIPickerView()
     let repsPicker = UIPickerView()
-    let myPresistedData = presistedData()
+
+    
+    
         
     var timeArray = Array(0...59)
         
@@ -61,29 +65,6 @@ class SetupViewController: UIViewController {
         addPickerToCube(picker: lapsPicker, parentView: firstCube,tag: 0)
         addPickerToCube(picker: restPicker, parentView: secondCube,tag: 1)
         addPickerToCube(picker: repsPicker, parentView: thirdCube,tag: 2)
-        
-        if((AccessToken.current) != nil) {
-            GraphRequest(graphPath: "me", parameters: ["fields": "name"]).start(completionHandler: {(connection, result, error) -> Void in
-                
-                if(error != nil) {
-                    print("Some error occurred.");
-                } else {
-                    let goodResult:Dictionary = result! as! Dictionary<String, String>
-                        self.myPresistedData.nameOfUser = "Hello ," + goodResult["name"]!
-                    try! realm.write{
-                        if !ConstantsForApp.results.isEmpty{
-                            ConstantsForApp.results.first?.nameOfUser = self.myPresistedData.nameOfUser
-
-                        }
-                        else {
-                            realm.add(self.myPresistedData)
-                        }
-                    }
-                    
-                }
-            })
-        }
-
     }
     
         // MARK: - Adding Fuctions
@@ -183,7 +164,18 @@ class SetupViewController: UIViewController {
         ])
     }
     
+    
     //MARK:- Buttons actions
+    
+    func updateName(){
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+        ConstantsForApp.ref.child(uid).observeSingleEvent(of: .value) { (snapshot) in
+            let value:[String:String] = snapshot.value as! Dictionary
+            ConstantsForApp.userName = value["name"] ?? "User"
+            
+        }
+    }
+    
     
     @objc func settingsWasPressed(){
         navigationController?.pushViewController(ConstantsForApp.settingsvc, animated: true)
