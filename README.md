@@ -14,7 +14,8 @@ HiiT Attack is integrated with the Facebook SD, which allows the user  to login 
 The app was created using the Xcode IDE ,and all UI and UX elements were created 100% programmatically, for complete control over the design and function of the app. 
 
 ## Safe and secure login using Firebase
-Registration, authentication and verification of users is managed through Firebase, for maximum security. 
+Registration, authentication and verification of users is managed through Firebase, for maximum security.
+
 
 ## Requirements 
 * Xcode 10
@@ -25,7 +26,7 @@ Registration, authentication and verification of users is managed through Fireba
 - Swift
 - Firebase
 - Facebook SDK
-- Realm 
+- Firestore
 - Adobe XD
 
 ![Imgur](https://imgur.com/sIgaiO6.jpg)
